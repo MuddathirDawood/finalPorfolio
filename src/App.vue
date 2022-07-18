@@ -1,6 +1,8 @@
 <template>
   <Navbar/>
-  <router-view/>
+  <main>
+    <router-view/>
+  </main>
   <Footer/>
 </template>
 
@@ -16,7 +18,7 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,16 +27,17 @@ export default {
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+main{
+  min-height: 100vh;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+body{
+  overflow-x: hidden;
 }
+
 </style>

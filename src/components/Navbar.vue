@@ -11,7 +11,7 @@
         </li>
         <li class="list" @click="active2" :class="{active: isActive2}">
             <a href="#">
-                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
                 <span class="text">About</span>
             </a>
         </li>
@@ -29,7 +29,7 @@
         </li>
         <li class="list" @click="active5" :class="{active: isActive5}">
             <a href="#">
-                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
                 <span class="text">Contact</span>
             </a>
         </li> 
@@ -98,7 +98,7 @@ export default {
 }
 
 header{
-    min-width: 100vw;
+    min-width: 98vw;
     background-color: #151414;
     display: flex;
     justify-content: center;
@@ -110,7 +110,7 @@ body{
     align-items: flex-start;
     min-height: 100vh;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .navigation{
     position: relative;
     width: 400px;
@@ -119,6 +119,7 @@ body{
     display: flex;
     justify-content: center !important;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navigation ul{
@@ -163,7 +164,7 @@ body{
     position: absolute;
     color: #ff5e14;
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 0.85em;
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
@@ -180,9 +181,9 @@ body{
     top: 50%;
     width: 70px;
     height: 70px;
-    background-color: black;
+    background-color: #151414;
     border-radius: 50%;
-    border: 6px solid white;
+    border: 6px solid black;
     transition: 0.5s;
 }
 
@@ -195,7 +196,7 @@ body{
     height: 20px;
     background: transparent;
     border-bottom-right-radius: 20px;
-    box-shadow: 1px 10px 0 0 white;
+    box-shadow: 1px 10px 0 0 black;
 }
 
 .indicator::after{
@@ -207,7 +208,7 @@ body{
     height: 20px;
     background: transparent;
     border-bottom-left-radius: 20px;
-    box-shadow: -1px 10px 0 0 white;
+    box-shadow: -1px 10px 0 0 black;
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator{
