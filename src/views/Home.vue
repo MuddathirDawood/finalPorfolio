@@ -38,6 +38,10 @@ h1{
   font-weight: 300;
 }
 
+p{
+  margin-bottom: 0;
+}
+
 .slide-right-enter-from{
     opacity: 0;
     transform: translateX(-1500px);

@@ -28,10 +28,10 @@
             </a>
         </li>
         <li class="list" @click="active5" :class="{active: isActive5}">
-            <a href="#">
+            <router-link to="/contact">
                 <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
                 <span class="text">Contact</span>
-            </a>
+            </router-link>
         </li> 
         <div class="indicator"></div>                               
     </ul>

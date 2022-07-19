@@ -17,6 +17,7 @@
                 <li>Watching Anime</li>
               </ul>              
             </div>
+            <div id="divider"></div>
             <div id="skills">
                 <div class="row skills" >
                     <div class="col-6" id="borderR">
@@ -139,7 +140,8 @@ export default {
 }
 
 .col-md-7{
-    padding-left: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 img{
@@ -200,6 +202,17 @@ h5{
 
 #borderR{
     border-right: white 1px solid;
+}
+
+#divider{
+    margin-left: 11%;
+    width: 80%;
+    height: 1px;
+    background-color: white;
+}
+
+#skills{
+    margin-top: 25px;
 }
 
 .skills{
