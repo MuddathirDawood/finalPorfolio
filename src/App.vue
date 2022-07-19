@@ -1,9 +1,17 @@
 <template>
-  <Navbar/>
+  <div id="header">
+    <Navbar/>
+  </div>
   <main>
-    <router-view/>
+    <router-view v-slot="{ Component }">
+      <transition name="route" mode="out-in">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
   </main>
-  <Footer/>
+  <div id="footer">
+    <Footer/>
+  </div>
 </template>
 
 <script>
@@ -18,12 +26,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -32,12 +39,53 @@ export default {
   padding: 0;
 }
 
+#header{
+  height: 70px;
+}
+
 main{
-  min-height: 100vh;
+  min-height: 50vh;
+  background: url("./assets/images.jpg") no-repeat center center/cover;
+}
+
+#footer{
+  height: 284px;
 }
 
 body{
   overflow-x: hidden;
+}
+
+.route-enter-from{
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.route-enter-active{
+  transition: all 0.5s ease-out;
+}
+
+.route-leave-to{
+  opacity: 0;
+  transform: translateX(1100px);
+}
+
+.route-leave-active{
+  transition: all 0.5s ease-in;
+}
+
+/*\\\\ SCROLLBARR ////*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8C8C8E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff5e14;
 }
 
 </style>

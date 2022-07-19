@@ -4,16 +4,16 @@
   <div class="navigation">
     <ul>
         <li class="list" @click="active" :class="{active: isActive}">
-            <a href="#">
+            <router-link to="/">
                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                 <span class="text">Home</span>
-            </a>
+            </router-link>
         </li>
         <li class="list" @click="active2" :class="{active: isActive2}">
-            <a href="#">
+            <router-link to="/about">
                 <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
                 <span class="text">About</span>
-            </a>
+            </router-link>
         </li>
         <li class="list" @click="active3" :class="{active: isActive3}">
             <a href="#">
