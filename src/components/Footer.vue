@@ -34,7 +34,7 @@
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="dmuddathir@gmail.com">dmuddathir@gmail.com</a></p>
+					<p><a href="#">dmuddathir@gmail.com</a></p>
 				</div>
 
 			</div>

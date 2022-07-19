@@ -44,7 +44,7 @@ export default {
 }
 
 main{
-  min-height: 50vh;
+  min-height: 91vh;
   background: url("./assets/images.jpg") no-repeat center center/cover;
 }
 
@@ -58,20 +58,20 @@ body{
 
 .route-enter-from{
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(-200px);
 }
 
 .route-enter-active{
-  transition: all 0.5s ease-out;
+  transition: all 0.75s ease-out;
 }
 
 .route-leave-to{
   opacity: 0;
-  transform: translateX(1100px);
+  transform: translateX(1200px);
 }
 
 .route-leave-active{
-  transition: all 0.5s ease-in;
+  transition: all 0.75s ease-in;
 }
 
 /*\\\\ SCROLLBARR ////*/
