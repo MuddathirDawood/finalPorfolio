@@ -30,7 +30,7 @@ const routes = [
   {
     path: '/projects/:id',
     name: 'project',
-    component: () => import('../views/Projects.vue'),
+    component: () => import('../views/Project.vue'),
     props: true
   }  
 ]

@@ -1,6 +1,5 @@
 <template>
 <div class="container">
-
   <div class="card">
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
   <div>
