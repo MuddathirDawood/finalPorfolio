@@ -16,10 +16,10 @@
             </router-link>
         </li>
         <li class="list" @click="active3" :class="{active: isActive3}">
-            <a href="#">
+            <router-link to="/projects">
                 <span class="icon"><ion-icon name="code-slash-outline"></ion-icon></span>
                 <span class="text">Projects</span>
-            </a>
+            </router-link>
         </li>
         <li class="list" @click="active4" :class="{active: isActive4}">
             <router-link to="/testimonials">

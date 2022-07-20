@@ -11,7 +11,7 @@
     <a href="https://www.linkedin.com/in/jared-isaacs-854514245/" class="linkedin" target="_blank">LinkedIn</a>
   </div>
 </div>
-<div class="card hover">
+<div class="card">
     <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg" alt="sample74" />
   <div>
     <img src="https://i.postimg.cc/XqgDHj34/Hannah1.jpg" alt="Hannah Dalwai" class="profile" />
