@@ -76,7 +76,7 @@ body{
 
 /*\\\\ SCROLLBARR ////*/
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
   height: 5px;
 }
 

@@ -111,15 +111,13 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 @media (max-width:768px){
     .container{
         min-height: 150vh;
-    }
-    img{
-        border-top-left-radius: 35px;
-        border-top-right-radius: 35px;
     }
 }
 
@@ -128,8 +126,8 @@ export default {
     width: 80%;
     height: auto;
     z-index: 5;
-    background: #151414;
-    border: 1px white solid;
+    background: black;
+    border: 1px black solid;
     border-radius: 35px;
     display: flex;
     flex-direction: row;
@@ -147,9 +145,8 @@ export default {
 img{
     height: auto;
     width: 100%;
-    border-right: 1px white solid;
-    border-top-left-radius: 35px;
-    border-bottom-left-radius: 35px;
+    border-right: 1px black solid;
+    /* border-radius: 35px; */
 }
 
 .container-bio{

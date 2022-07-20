@@ -22,10 +22,10 @@
             </a>
         </li>
         <li class="list" @click="active4" :class="{active: isActive4}">
-            <a href="#">
+            <router-link to="/testimonials">
                 <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
                 <span class="text">Testimonials</span>
-            </a>
+            </router-link>
         </li>
         <li class="list" @click="active5" :class="{active: isActive5}">
             <router-link to="/contact">
@@ -97,6 +97,10 @@ export default {
     box-sizing: border-box;
 }
 
+img{
+    margin-right: 10px;
+}
+
 header{
     min-width: 98vw;
     background-color: #151414;
@@ -152,7 +156,7 @@ body{
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    transition: 0.5s;
+    transition: 1.20s;
     color: #ff5e14;
 }
 
@@ -166,7 +170,7 @@ body{
     font-weight: 400;
     font-size: 0.85em;
     letter-spacing: 0.05em;
-    transition: 0.5s;
+    transition: 1.20s;
     opacity: 0;
     transform: translateY(-20px);
 }
@@ -184,7 +188,7 @@ body{
     background-color: #151414;
     border-radius: 50%;
     border: 6px solid black;
-    transition: 0.5s;
+    transition: 1.20s;
 }
 
 .indicator::before{
