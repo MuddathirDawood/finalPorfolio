@@ -102,7 +102,8 @@ export default {
 
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Open Sans', cursive;
+	font-size: 36px;
+	font-family: 'Open Sans', cursive;
 	margin: 0;
 }
 
@@ -254,6 +255,10 @@ export default {
 
 	.footer-distributed .footer-center i{
 		margin-left: 0;
+	}
+
+	.footer-distributed h3{
+		font-size: 23px;	
 	}
 
 }

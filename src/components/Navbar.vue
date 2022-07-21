@@ -234,4 +234,25 @@ body{
 .navigation ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px * 4));
 }
+
+@media (max-width: 497px){
+    img{
+        display: none;
+    }
+}
+
+@media (max-width: 356px){
+    *{
+       font-size: 16px; 
+    }
+    .indicator{
+        width: 60px;
+        height: 60px;
+    }
+    .navigation{
+        width: 100%;
+        height: 60px;
+    }
+}
+
 </style>

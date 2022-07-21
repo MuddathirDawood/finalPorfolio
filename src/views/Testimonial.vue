@@ -4,6 +4,16 @@
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
   <div>
     <img src="https://i.postimg.cc/NLqf4xgW/Jared.jpg" alt="Jared Isaacs" class="profile" />
+    <h2 style="font-size:10px">Cameron Stemmet<span>Colleague</span></h2>
+    <p>Muddathir is one of the easiest people I've ever had the pleasure of working with. His adaptability and helpfulness is unmatched and is always ready to help his colleagues with great advice and a smile. I would absolutely recommend him to any and every organization because i believe he would flourish under any adversity as well as the personality to work well with anyone. He also has the leadership qualities that would be valuable under any circumstances.  It's been a pleasure to call him a colleague and friend.</p>
+    <a href="https://github.com/AkutoBlade" class="github" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/jared-isaacs-854514245/" class="linkedin" target="_blank">LinkedIn</a>
+  </div>
+</div>  
+  <div class="card">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+  <div>
+    <img src="https://i.postimg.cc/NLqf4xgW/Jared.jpg" alt="Jared Isaacs" class="profile" />
     <h2>Jared Isaacs<span>Colleague</span></h2>
     <p>Muddathir is a helpful colleague who helped me and several other colleagues with our problems and when he focuses on a project he will be determined to finish it as quickly as possible.He will be a valuable asset.</p>
     <a href="https://github.com/AkutoBlade" class="github" target="_blank">GitHub</a>
@@ -78,7 +88,7 @@ export default {
   overflow: hidden;
   margin: 10px;
   min-width: 230px;
-  max-width: 315px;
+  max-width: 325px;
   width: 100%;
   color: #ffffff;
   border: #ff5e14 2px groove;
@@ -185,7 +195,7 @@ export default {
   padding-right: 15px;
   letter-spacing: 1px;
   overflow-y: auto;
-  max-height: 150px;
+  max-height: 140px;
   opacity: 0.8;
 }
 

@@ -18,7 +18,7 @@ export default createStore({
         id:2,
         title:'Portfolio',
         tools:'Bootstrap 5, CSS3, HTML5',
-        description:'This project one of the portfolios I made which was mt mid course assignment for Life Choices Academy',
+        description:'This project one of the portfolios I made which was made with course assignment for Life Choices Academy',
         links:{
           github: 'https://github.com/MuddathirDawood/Portfolio',
           live: 'https://muddathir-dawood-porflioproject.netlify.app/'
