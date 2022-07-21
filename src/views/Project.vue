@@ -19,7 +19,7 @@
                 </router-link>
                 <div class="project-details">
                     <span class="mb-4">{{project[0].tools}}</span>
-                    <span>Title:</span>
+                    <span style="color: white">Title:</span>
                 </div>
                 <h1 class="project-title">{{project[0].title}}</h1>
                 <p class="project-text">
@@ -157,7 +157,7 @@ img{
     text-transform: uppercase;
     font-size: 19px;
     color: #fff;
-    background-image: linear-gradient(to right,#ff5e14 0%, #e34800 100%);
+    background-image: linear-gradient(to right,#ff5e14 0%, #672100 100%);
     text-decoration: none;
 }
 

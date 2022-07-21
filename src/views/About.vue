@@ -120,18 +120,6 @@
       <div class="desc">5 years of High School Education with 3 years of majoring in Physical Sciences, Life Sciences, I.T and Pure Maths. I learnt a little bit of Delphi And SQL during my last three years of High School. Passed Matric in the year 2021 with a Bachelor Pass</div>
     </div>
   </li>
-
-  <!-- Item 3 -->
-  <li>
-    <div class="direction-r">
-      <div class="flag-wrapper">
-        <span class="hexa"></span>
-        <span class="flag">Lorem Occaecat.</span>
-        <span class="time-wrapper"><span class="time">July 2014</span></span>
-      </div>
-      <div class="desc">Lorem ipsum Minim labore Ut cupidatat quis qui deserunt proident fugiat pariatur cillum cupidatat reprehenderit sit id dolor consectetur ut.</div>
-    </div>
-  </li>
 </ul>
     </div>
 </div>

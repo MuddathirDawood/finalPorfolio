@@ -253,6 +253,9 @@ body{
         width: 100%;
         height: 60px;
     }
+    .navigation ul{
+    width: 300px;
+}
 }
 
 </style>
