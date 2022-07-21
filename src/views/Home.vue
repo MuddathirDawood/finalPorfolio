@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <div>
-      <transition name="slide-right" appear>
+      <transition name="fade" appear>
       <p style="text-align: start;">I am</p>
       </transition>
       <transition name="fade" appear>
       <h1>Muddathir Dawood</h1>
       </transition>
-      <transition name="slide-left" appear>
+      <transition name="fade" appear>
       <p style="text-align: end;">An Aspiring Full Stack Developer</p>
       </transition>
     </div>
@@ -42,34 +42,6 @@ p{
   margin-bottom: 0;
 }
 
-.slide-right-enter-from{
-    opacity: 0;
-    transform: translateX(-1500px);
-}
-
-.slide-right-enter-to{
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-.slide-right-enter-active{
-    transition: all 2s ease;
-}
-
-.slide-left-enter-from{
-    opacity: 0;
-    transform: translateX(1500px);
-}
-
-.slide-left-enter-to{
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-.slide-left-enter-active{
-    transition: all 2s ease;
-}
-
 .fade-enter-from{
     opacity: 0;
     transform: scale(0.1);
@@ -81,7 +53,7 @@ p{
 }
 
 .fade-enter-active{
-    transition: all 2s ease;
+    transition: all 2.5s ease;
 }
 
 

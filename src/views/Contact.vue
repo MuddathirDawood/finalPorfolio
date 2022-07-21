@@ -154,7 +154,7 @@ textarea {
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	border-radius: 3px;
+	border-radius: 1px;
 }
 
 .single-contact h5 {

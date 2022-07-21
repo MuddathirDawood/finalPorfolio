@@ -97,6 +97,8 @@ img{
     height: 250px;
 }
 
+
+
 .project-info>a{
     text-decoration: none;
 }
@@ -181,6 +183,10 @@ img{
         min-width: 100%;
         max-width: 100%;
         transform: translate(0, -8rem);
+    }
+    .project-info{
+    width: 100%;
+    font-size: 20px;
     }
 }
 

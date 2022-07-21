@@ -5,7 +5,7 @@
             <img src="https://i.postimg.cc/yd2mtrVd/Muddathir-1.jpg" alt="">
         </div>
         <div class="col-md-7" style="text-align: center;"> 
-            <h1>About Me Test</h1>
+            <h1>About Me</h1>
             <div class="container-bio">
               <h2 class="h2work">Bio</h2>
               I am an optimistic person who will help my peers to the best of my ability. I'm patient and hard-working to the point where I can fully divert all my attention to my work.
@@ -171,6 +171,18 @@ export default {
 .col-md-7{
     padding-left: 25px;
     padding-right: 25px;
+}
+
+@media (max-width: 426px){
+  .col-md-7{
+    padding: 0;
+  }
+  #soft{
+    padding: 0;
+  }
+  #soft>li::before{
+    margin: 0;
+  }
 }
 
 img{
