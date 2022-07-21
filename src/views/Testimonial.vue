@@ -1,71 +1,26 @@
 <template>
 <div class="container">
-  <div class="card">
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
+  <div class="card" v-for="testimonial in testimonials" :key="testimonial">
+  <img :src="testimonial.back_image" alt="sample87" />
   <div>
-    <img src="https://i.postimg.cc/NLqf4xgW/Jared.jpg" alt="Jared Isaacs" class="profile" />
-    <h2 style="font-size:10px">Cameron Stemmet<span>Colleague</span></h2>
-    <p>Muddathir is one of the easiest people I've ever had the pleasure of working with. His adaptability and helpfulness is unmatched and is always ready to help his colleagues with great advice and a smile. I would absolutely recommend him to any and every organization because i believe he would flourish under any adversity as well as the personality to work well with anyone. He also has the leadership qualities that would be valuable under any circumstances.  It's been a pleasure to call him a colleague and friend.</p>
-    <a href="https://github.com/AkutoBlade" class="github" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/jared-isaacs-854514245/" class="linkedin" target="_blank">LinkedIn</a>
+    <img :src="testimonial.profile_img" alt="Cameron Stemmet" class="profile" />
+    <h2>{{testimonial.name}}<span>{{testimonial.relation}}</span></h2>
+    <p>{{testimonial.message}}</p>
+    <a :href="testimonial.links.github" class="github" target="_blank">GitHub</a>
+    <a :href="testimonial.links.linkedin" class="linkedin" target="_blank">LinkedIn</a>
   </div>
 </div>  
-  <div class="card">
-  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
-  <div>
-    <img src="https://i.postimg.cc/NLqf4xgW/Jared.jpg" alt="Jared Isaacs" class="profile" />
-    <h2>Jared Isaacs<span>Colleague</span></h2>
-    <p>Muddathir is a helpful colleague who helped me and several other colleagues with our problems and when he focuses on a project he will be determined to finish it as quickly as possible.He will be a valuable asset.</p>
-    <a href="https://github.com/AkutoBlade" class="github" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/jared-isaacs-854514245/" class="linkedin" target="_blank">LinkedIn</a>
-  </div>
-</div>
-<div class="card">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg" alt="sample74" />
-  <div>
-    <img src="https://i.postimg.cc/XqgDHj34/Hannah1.jpg" alt="Hannah Dalwai" class="profile" />
-    <h2>Hannah Dalwai<span>Assistant Lecturer</span></h2>
-    <p>Muddathir is a developer with unlimited potential and a great eye for design. He is always ready to help his colleagues when needed. It is a pleasure watching his skill grow with each project he is given. He will add an enormous amount of value to any team.</p>
-    <a href="https://github.com/HannahDalwai" class="github" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/hannah-dalwai-029396216/" class="linkedin" target="_blank">LinkedIn</a>
-  </div>
-</div>
-<div class="card">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample69.jpg" alt="sample69" />
-  <div>
-    <img src="https://i.postimg.cc/63vwTvKq/Daniel-3-1.jpg" alt="Daniel Fredericks" class="profile" />
-    <h2>Daniel Fredericks<span>Colleague</span></h2>
-    <p>Muddathir has a very broad understanding of coding and is able to adapt to any situation seemingly with ease. It is easy to see that a lot of work is put into understanding concepts and applying them in his tasks. He works well with others, is great to be around and is an all out great guy. I believe that he will be an asset to anyone that hires him.</p>
-    <a href="https://github.com/DanielJamesF" class="github" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/daniel-fredericks-85744023a/" class="linkedin" target="_blank">LinkedIn</a>
-  </div>
-</div>
-<div class="card">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample76.jpg" alt="sample69" />
-  <div>
-    <img src="https://i.postimg.cc/RF1Sv4F6/joel1.jpg" alt="Joel Mukanya" class="profile" />
-    <h2>Joel Mukanya<span>Lecturer</span></h2>
-    <p>Muddathir is a very creative, well-behaved student, he enjoys working with his classmates and does well working on his project. He has learned many new tricks for Web Development. I am quite happy with the effort he puts into his work. It's a pleasure to see his projects which he worked on so far. I recommend him</p>
-    <a href="https://github.com/joelmukanya" class="github" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/joel-tshimanga-mukanya-b4b27834/" class="linkedin" target="_blank">LinkedIn</a>
-  </div>
-</div>
-<div class="card">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample86.jpg" alt="sample69" />
-  <div>
-    <img src="https://i.postimg.cc/rFKkjNJD/Clayton-3.jpg" alt="Clayton Adonis" class="profile" />
-    <h2>Clayton Adonis<span>Colleague</span></h2>
-    <p>Muddathir always helps his colleagues with problems simple or huge. He has helped me with several of my problems and evrytime I learn something new when he fixes my problems. It's a pleasure to be his colleague and see how hard he works. I highly recommend him</p>
-    <a href="https://github.com/Clayton0205" class="github" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/clayton-adonis-798612238/" class="linkedin" target="_blank">LinkedIn</a>
-  </div>
-</div>
+
 </div>
 </template>
 
 <script>
 export default {
-
+    computed:{
+      testimonials(){
+        return this.$store.state.testimonials
+      }
+    }
 }
 </script>
 
@@ -182,6 +137,7 @@ export default {
 
 .card h2 {
   margin: 0 0 5px;
+  font-size: 30px;
   font-weight: 300;
 }
 .card h2 span {

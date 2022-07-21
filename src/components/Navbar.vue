@@ -1,6 +1,6 @@
 <template>
 <header>
-   <img src="../assets/Logo.png" alt="" style="width: 70px; height: 70px"> 
+   <img src="https://i.postimg.cc/wxLnc4jk/Logo.png" alt="" style="width: 70px; height: 70px"> 
   <div class="navigation">
     <ul>
         <li class="list" @click="active" :class="{active: isActive}">

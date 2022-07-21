@@ -46,7 +46,7 @@ export default {
 
 main{
   min-height: 91vh;
-  background: url("./assets/images.jpg") no-repeat center center/cover;
+  background: url("https://i.postimg.cc/HLzf5rW1/images.jpg") no-repeat center center/cover;
 }
 
 #footer{
