@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <form class="d-flex justify-content-center mb-4">
+        <input class="form-control" type="search" placeholder="Search by Name of Projects" id="search" v-model="search">
+    </form>
     <transition-group
      tag="div"
      appear
@@ -17,9 +20,20 @@ import ProjectCards from '@/components/ProjectCards.vue'
 
 export default {
   components: { ProjectCards },
+  data(){
+    return{
+        search: ''
+    }
+  },
     computed:{
         projects(){
-           return this.$store.state.projects
+           return this.$store.state.projects?.filter(projects => {
+          let isMatch = true;
+          if (!projects.title.toLowerCase().includes(this.search.toLowerCase())) {
+              isMatch = false;
+          }
+          return isMatch
+        })
         }
     },
     setup(){
@@ -66,6 +80,32 @@ export default {
     .container>div{
         min-width: 100%;
         gap: 10px;
+    }
+}
+
+input{
+    width: 35%;
+    border-radius: 0;
+    border: 1px solid #ff5e14;
+    background-color: #222;
+    color: white;
+}
+
+input[type="search"]{
+    background-color: #222;
+    color: white;
+    border: 1px solid #ff5e14;
+}
+
+@media (max-width:769px){
+    input{
+        width: 50%;
+    }
+}
+
+@media (max-width:426px){
+    input{
+        width: 75%;
     }
 }
 

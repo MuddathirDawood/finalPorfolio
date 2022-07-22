@@ -25,8 +25,8 @@
                 <p class="project-text">
                     {{project[0].description}}
                 </p>
-                <a :href="project[0].links.github" class="project-links" target="blank">GitHub</a>
-                <a :href="project[0].links.live" class="project-links" target="blank">Live</a>
+                <a :href="project[0].links.github" class="project-links" target="blank"><span>GitHub</span><i></i></a>
+                <a :href="project[0].links.live" class="project-links" target="blank"><span>Live</span><i></i></a>
             </div>
             </transition>
         </div>
@@ -149,7 +149,7 @@ img{
     color: rgba(255, 255, 255, 0.8);
 }
 
-.project-links{
+/* .project-links{
     display: inline-block;
     padding: 15px 35px;
     margin-right: 5px;
@@ -159,7 +159,7 @@ img{
     color: #fff;
     background-image: linear-gradient(to right,#ff5e14 0%, #672100 100%);
     text-decoration: none;
-}
+} */
 
 @media (max-width:868px){
     .project-card{
@@ -286,6 +286,83 @@ button:hover .button-text {
     .project-links{
         margin-top: 5px;
     }
+}
+
+.project-links{
+  display: inline-block;
+  position: relative;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  width: 180px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.project-links:hover{
+  letter-spacing: 0.25em;
+  background-color: #ff5e14;
+  color: #ff5e14;
+  box-shadow: 0 0 10px #ff5e14;
+}
+
+.project-links::before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #222;
+}
+
+.project-links span{
+  position: relative;
+  z-index: 2;
+}
+
+.project-links i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.project-links i::before{
+  content: '';
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 20px;
+  height: 10px;
+  border: 2px solid #ff5e14;
+  background: rgb(0, 0, 0); 
+  transform: translateX(-50%);
+  transition: 0.6s; 
+}
+
+.project-links:hover i::before{
+  width: 25px;
+  left: 10%;
+}
+
+.project-links i::after{
+  content: '';
+  position: absolute;
+  bottom: -3.5px;
+  left: 10%;
+  width: 20px;
+  height: 10px;
+  border: 2px solid #ff5e14;
+  background: rgb(0, 0, 0); 
+  transform: translateX(-50%);
+  transition: 0.6s; 
+}
+
+.project-links:hover i::after{
+  width: 25px;
+  left: 80%;
 }
 
 </style>
