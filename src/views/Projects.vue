@@ -62,6 +62,11 @@ export default {
     min-height: 100vh;
     gap: 50px;
 }
-
+@media (max-width: 426px){
+    .container>div{
+        min-width: 100%;
+        gap: 10px;
+    }
+}
 
 </style>

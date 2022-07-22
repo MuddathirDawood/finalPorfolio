@@ -177,7 +177,7 @@ body{
 
 .navigation ul li.active a .text{
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
 }
 
 .indicator{
@@ -255,6 +255,29 @@ body{
     }
     .navigation ul{
     width: 300px;
+    }
+    .navigation ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(60px * 0));
+    }
+
+    .navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(60px * 1));
+    }
+
+    .navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(60px * 2));
+    }
+
+    .navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(60px * 3));
+    }
+
+    .navigation ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(60px * 4));
+    }
+
+    .navigation ul li.active a .icon{
+    transform: translateY(25px);
 }
 }
 

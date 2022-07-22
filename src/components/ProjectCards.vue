@@ -1,5 +1,4 @@
 <template>
-          <div>
             <div class="card my-3">
               <img :src="project.image" alt="" class="postImg">
               <div class="card-desc">
@@ -9,7 +8,6 @@
                 </router-link> 
               </div>
             </div>
-        </div>
 </template>
 
 <script>
@@ -36,6 +34,13 @@ export default {
     width: 700px;
     height: 350px;
     border: #ff5e14 1px solid;
+}
+
+@media (max-width:426px){
+    .card{
+      width: 100%;
+      height: 175px;
+    }
 }
 
 /* .card img {

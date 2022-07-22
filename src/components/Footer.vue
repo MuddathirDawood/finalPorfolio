@@ -6,15 +6,25 @@
 				<h3>Muddathir<span>Dawood</span></h3>
 
 				<p class="footer-links">
-					<a href="#" class="link-1">Home</a>
+					<router-link class="link-1" to="/">
+					  Home
+					</router-link>
 					
-					<a href="#">About</a>
-				
-					<a href="#">Projects</a>
-				
-					<a href="#">Testimonial</a>
+					<router-link to="/about">
+					  About
+					</router-link>
 										
-					<a href="#">Contact</a>
+					<router-link to="/projects">
+					  Projects
+					</router-link>
+				
+					<router-link to="/testimonials">
+					  Testimonials
+					</router-link>
+										
+					<router-link to="/contact">
+					  Contact
+					</router-link>
 				</p>
 
 				<p class="footer-company-name">Muddathir Dawood © 2022</p>
@@ -178,7 +188,7 @@ export default {
 	text-decoration: none;;
 }
 
-.footer-distributed .footer-links a:before {
+.footer-distributed .footer-links>a:before {
   content: "|";
   font-weight:300;
   font-size: 20px;

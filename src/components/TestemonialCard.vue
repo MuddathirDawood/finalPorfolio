@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-  <img :src="testimonial.back_image" alt="sample87" />
+  <img :src="testimonial.back_image" alt="background img" />
   <div>
-    <img :src="testimonial.profile_img" alt="Cameron Stemmet" class="profile" />
+    <img :src="testimonial.profile_img" :alt="testimonial.name" class="profile" />
     <h2>{{testimonial.name}}<span>{{testimonial.relation}}</span></h2>
     <p>{{testimonial.message}}</p>
     <a :href="testimonial.links.github" class="github" target="_blank">GitHub</a>

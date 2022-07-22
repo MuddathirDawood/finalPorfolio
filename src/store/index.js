@@ -5,8 +5,8 @@ export default createStore({
     projects:[
       {
         id:1,
-        title:'bootstrap_page_exercise',
-        tools:'Bootstrap 5, CSS3, HTML5',
+        title:'Bootstrap Page Exercise',
+        tools:'Bootstrap 5/CSS 3/HTML 5',
         description:'This project is the combination of HTML5 and CSS3, it consists mostly of Bootstrap',
         links:{
           github: 'https://github.com/MuddathirDawood/bootstrap_page_exercise',
@@ -17,7 +17,7 @@ export default createStore({
       {
         id:2,
         title:'Portfolio',
-        tools:'Bootstrap 5, CSS3, HTML5',
+        tools:'Bootstrap 5/CSS 3/HTML 5',
         description:'This project one of the portfolios I made which was made with course assignment for Life Choices Academy',
         links:{
           github: 'https://github.com/MuddathirDawood/Portfolio',
@@ -27,7 +27,7 @@ export default createStore({
       },
       {
         id:3,
-        title:'website',
+        title:'Website',
         tools:'HTML5',
         description:'This project is a compilation of HTML5 Tags that I learnt recently that time',
         links:{
@@ -38,8 +38,8 @@ export default createStore({
       },
       {
         id:4,
-        title:'calculator',
-        tools:'Bootstrap 5, CSS3, HTML5, Javascript',
+        title:'Calculator',
+        tools:'Bootstrap 5/CSS 3/HTML 5/Javascript',
         description:'This was first made with no functionality then months later after we learnt Javascript',
         links:{
           github: 'https://github.com/MuddathirDawood/Calculator',
@@ -49,8 +49,8 @@ export default createStore({
       },
       {
         id:5,
-        title:'PropertiesList',
-        tools:'Bootstrap 5, CSS3, HTML5, Javascript',
+        title:'Properties List',
+        tools:'Bootstrap 5/CSS 3/HTML 5/Javascript',
         description:'This was my first big assignment where we had to use everything we learnt in Javascript to create a complicated listing with a admin page',
         links:{
           github: 'https://github.com/MuddathirDawood/PropertiesList',
@@ -61,7 +61,7 @@ export default createStore({
       {
         id:6,
         title:'RGB To Hex',
-        tools:'CSS3, HTML5, Javascript',
+        tools:'CSS 3/HTML 5/Javascript',
         description:'This project is a small side project to convert a rgb color code to a hex color code',
         links:{
           github: 'https://github.com/MuddathirDawood/JS-Tasks/tree/master/RGBtoHex',

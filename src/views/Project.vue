@@ -25,8 +25,8 @@
                 <p class="project-text">
                     {{project[0].description}}
                 </p>
-                <a :href="project[0].links.github" class="project-link1" target="blank">GitHub</a>
-                <a :href="project[0].links.live" class="project-link1" target="blank">Live</a>
+                <a :href="project[0].links.github" class="project-links" target="blank">GitHub</a>
+                <a :href="project[0].links.live" class="project-links" target="blank">Live</a>
             </div>
             </transition>
         </div>
@@ -49,13 +49,11 @@ export default {
         setup(){
         const beforeEnterL=(el)=>{
             el.style.opacity = 0;
-            el.style.transform = 'translateX(-450px)';
         }
 
         const enterL = (el, done) =>{
             gsap.to(el,{
                 opacity: 1,
-                x: -80,
                 duration: 1.5,
                 onComplete: done,
                 delay: 1
@@ -117,7 +115,7 @@ img{
     min-width: 560px;
     min-height: 500px;
     height: 30rem;
-    transform: translateX(-80px);
+    transform: translateX(-80px) !important;
     position: relative;
     border: #ff5e14 2px solid;
 }
@@ -139,7 +137,7 @@ img{
 }
 
 .project-title{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0 0 32px;
     text-transform: uppercase;
     color: #ff5e14;
@@ -151,7 +149,7 @@ img{
     color: rgba(255, 255, 255, 0.8);
 }
 
-.project-link1{
+.project-links{
     display: inline-block;
     padding: 15px 35px;
     margin-right: 5px;
@@ -178,16 +176,18 @@ img{
         max-width: 100vw;
         /* padding-top: 100px; */
         flex-direction: column;
+        padding: 25px;
     }
     .project-image{
         min-width: 100%;
         max-width: 100%;
-        transform: translate(0, -8rem);
+        transform: translate(0, -8rem) !important;
     }
     .project-info{
     width: 100%;
     font-size: 20px;
     }
+
 }
 
 /* Back Button */
@@ -247,7 +247,7 @@ button.learn-more .circle .icon.arrow::before {
  height: 0.625rem;
  border-top: 0.125rem solid #fff;
  border-right: 0.125rem solid #fff;
- transform: rotate(45deg);
+ transform: rotate(225deg);
 }
 
 button.learn-more .button-text {
@@ -271,7 +271,6 @@ button:hover .circle {
 }
 
 button:hover .circle .icon.arrow {
- background: #fff;
  transform: translate(1rem, 0);
 }
 

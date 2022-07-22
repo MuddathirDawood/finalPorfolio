@@ -132,7 +132,7 @@ textarea {
 	border: 1px solid #555;
 	padding: 5px 10px;
 	margin-top: 15px;
-	background-color: transparent;
+	background-color: rgba(51, 51, 51, 0.35);
 	color: #fff;
 }
 
