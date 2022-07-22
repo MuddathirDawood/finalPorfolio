@@ -1,6 +1,8 @@
 <template>
 <div class="container">
-  <Testemonial-card  v-for="testimonial in testimonials" :key="testimonial" :testimonial="testimonial"/>
+  <transition-group name="fade" appear>
+    <Testemonial-card  v-for="testimonial in testimonials" :key="testimonial" :testimonial="testimonial"/>
+  </transition-group>
 </div>  
 </template>
 
@@ -29,5 +31,18 @@ export default {
     padding-bottom: 50px;
 }
 
+.fade-enter-from{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.fade-enter-to{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fade-enter-active{
+    transition: all 3s ease;
+}
 
 </style>

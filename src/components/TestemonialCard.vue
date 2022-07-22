@@ -43,6 +43,8 @@ export default {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
+
+
 #piece{
   max-width: 100%;
   height: 225px;
