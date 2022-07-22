@@ -154,7 +154,31 @@ export default createStore({
         },
         profile_img: 'https://i.postimg.cc/rFKkjNJD/Clayton-3.jpg',
         back_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample86.jpg'
-      }               
+      },
+      {
+        id:7,
+        name:'Amanda Gudlwa',
+        relation: 'Colleague',
+        message: 'Muddathir Dawood is a person who is a pleasure to work with, he knows how to lead, and also how to be in a position to take instruction. Muddathir is a good team player. He has good attention to detail. He knows how to stay focused and work on a task as well as keeping to deadlines. I would recomend Muddathir to be part of any team and given any responsibility.',
+        links:{
+          github: 'https://github.com/AmandaAzania',
+          linkedin: 'https://www.linkedin.com/in/mandy-gudlwa-b79a96238/'
+        },
+        profile_img: 'https://i.postimg.cc/0NsmM3wK/Amanda-1.jpg',
+        back_image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample13.jpg'
+      }                   
+    ],
+    education:[
+      {
+        faculty: 'Life Choices Coding Academy',
+        years: 'Mar 2022',
+        description: 'A Student that is doing a 12-month coding course where we learn back-end and front-end web developing and the software we use to do this is HTML5, CSS3, Bootstrap, JavaScript and more'
+      },
+      {
+        faculty: 'Spine Road High School',
+        years: '2017 - 2021',
+        description: '5 years of High School Education with 3 years of majoring in Physical Sciences, Life Sciences, I.T and Pure Maths. I learnt a little bit of Delphi And SQL during my last three years of High School. Passed Matric in the year 2021 with a Bachelor Pass'        
+      }
     ]
   },
   getters: {

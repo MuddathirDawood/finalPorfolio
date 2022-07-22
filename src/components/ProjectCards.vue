@@ -4,7 +4,7 @@
               <div class="card-desc">
                 <p> Project Name: <br>{{project.title}}</p>
                 <router-link :to="{name: 'project', params:{id: project.id}}">
-                    <button id="postButton">See more</button>
+                    <span id="postButton">See more</span><i></i>
                 </router-link> 
               </div>
             </div>
@@ -66,7 +66,7 @@ export default {
   flex-direction: column;
   justify-content: center;
 }
-#postButton{
+/* #postButton{
   width: 25%;
   align-self: center;
   margin-top: 25px;
@@ -88,6 +88,81 @@ export default {
   border-bottom-color: white;   
   color: #ff5e14;
   transition: all 1s ease-in;
+} */
+
+a{
+  position: relative;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  width: 180px;
+  text-align: center;
+}
+
+a:hover{
+  letter-spacing: 0.25em;
+  background-color: #ff5e14;
+  color: #ff5e14;
+  box-shadow: 0 0 10px #ff5e14;
+}
+
+a::before{
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #222;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+a i::before{
+  content: '';
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 20px;
+  height: 10px;
+  border: 2px solid #ff5e14;
+  background: rgb(0, 0, 0); 
+  transform: translateX(-50%);
+  transition: 0.6s; 
+}
+
+a:hover i::before{
+  width: 25px;
+  left: 10%;
+}
+
+a i::after{
+  content: '';
+  position: absolute;
+  bottom: -3.5px;
+  left: 10%;
+  width: 20px;
+  height: 10px;
+  border: 2px solid #ff5e14;
+  background: rgb(0, 0, 0); 
+  transform: translateX(-50%);
+  transition: 0.6s; 
+}
+
+a:hover i::after{
+  width: 25px;
+  left: 80%;
 }
 
 .card:hover .card-desc {

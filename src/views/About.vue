@@ -101,20 +101,22 @@
             </div>
         </div>
     </div>
+    <div id="divider1"></div>
     <div class="row">
         <header>
-    <h1>Education</h1>
+    <h1>Resume</h1>
 </header>
+<h3>Education</h3>
 <ul class="timeline">
   <!-- Item 1 -->
   <li>
     <div class="direction-r">
       <div class="flag-wrapper">
         <span class="hexa"></span>
-        <span class="flag">Life Choices Code Academy</span>
-        <span class="time-wrapper"><span class="time">Mar 2022</span></span>
+        <span class="flag">{{education[0].faculty}}</span>
+        <span class="time-wrapper"><span class="time">{{education[0].years}}</span></span>
       </div>
-      <div class="desc">A Student that is doing a 12-month coding course where we learn back-end and front-end web developing and the software we use to do this is HTML5, CSS3, Bootstrap, JavaScript and more</div>
+      <div class="desc">{{education[0].description}}</div>
     </div>
   </li>
 
@@ -123,10 +125,10 @@
     <div class="direction-l">
       <div class="flag-wrapper">
         <span class="hexa"></span>
-        <span class="flag">Spine Road High School</span>
-        <span class="time-wrapper"><span class="time">2017 - 2021</span></span>
+        <span class="flag">{{education[1].faculty}}</span>
+        <span class="time-wrapper"><span class="time">{{education[1].years}}</span></span>
       </div>
-      <div class="desc">5 years of High School Education with 3 years of majoring in Physical Sciences, Life Sciences, I.T and Pure Maths. I learnt a little bit of Delphi And SQL during my last three years of High School. Passed Matric in the year 2021 with a Bachelor Pass</div>
+      <div class="desc">{{education[1].description}}</div>
     </div>
   </li>
 </ul>
@@ -136,7 +138,11 @@
 
 <script>
 export default {
-
+    computed:{
+      education(){
+        return this.$store.state.education
+      }
+    }
 }
 </script>
 
@@ -258,6 +264,19 @@ h5{
     width: 80%;
     height: 1px;
     background-color: white;
+    align-self: center;
+}
+
+#divider1{
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    align-self: center;
+}
+
+h3{
+  color: white;
+  text-align: center;
 }
 
 #skills{
