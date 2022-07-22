@@ -67,12 +67,21 @@
                   </div>               
                 </div>
               </div>
-              <div class="row pt-2">
+              <div class="row py-2">
                 <div class="col-12"><p class="progresstext">
                   Vue
                   <span id="nbr6">%</span></p>
                   <div class="progress bg-secondary" style="height: 8px;">
                       <div class="progress-bar" style="width:20%; height: 8px;"></div>
+                  </div>               
+                </div>
+              </div>
+              <div class="row pt-2">
+                <div class="col-12"><p class="progresstext">
+                  JavaScript
+                  <span id="nbr7">%</span></p>
+                  <div class="progress bg-secondary" style="height: 8px;">
+                      <div class="progress-bar" style="width:40%; height: 8px;"></div>
                   </div>               
                 </div>
               </div>
@@ -317,6 +326,12 @@ h5{
   inherits: false;
 }
 
+@property --num7 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
 
 #nbr {
   counter-reset: num1 var(--num1);
@@ -372,6 +387,15 @@ h5{
   content: counter(num6);
 }
 
+#nbr7 {
+  counter-reset: num7 var(--num7);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr7:before {
+  content: counter(num7);
+}
+
 @keyframes animate {
   to {
     --num1: 75;
@@ -380,6 +404,7 @@ h5{
     --num4: 35;
     --num5: 85;
     --num6: 20;
+    --num7: 40;
   }
 }
 

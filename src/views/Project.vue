@@ -62,16 +62,16 @@ export default {
 
         const beforeEnterR=(el)=>{
             el.style.opacity = 0;
-            el.style.transform = 'translateX(450px)';
+            el.style.transform = 'translateX(-150px)';
         }
 
         const enterR = (el, done) =>{
             gsap.to(el,{
                 opacity: 1,
                 x: 0,
-                duration: 1.5,
+                duration: 2,
                 onComplete: done,
-                delay: 1
+                delay: 1.5
             })
         }        
 
@@ -184,8 +184,12 @@ img{
         transform: translate(0, -8rem) !important;
     }
     .project-info{
-    width: 100%;
-    font-size: 20px;
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    button.learn-more .button-text {
+        top: -7px;
     }
 
 }
@@ -253,7 +257,7 @@ button.learn-more .circle .icon.arrow::before {
 button.learn-more .button-text {
  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
  position: absolute;
- top: 0;
+ top: -2px;
  left: 0;
  right: 0;
  bottom: 0;
@@ -276,6 +280,12 @@ button:hover .circle .icon.arrow {
 
 button:hover .button-text {
  color: #ff5e14;
+}
+
+@media (max-width:467px){
+    .project-links{
+        margin-top: 5px;
+    }
 }
 
 </style>

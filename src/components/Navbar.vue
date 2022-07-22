@@ -239,6 +239,15 @@ body{
     img{
         display: none;
     }
+
+    .navigation ul li:nth-child(1).active ~ .indicator::before{
+        display: none;
+    }
+    
+    .navigation ul li:nth-child(5).active ~ .indicator::after{
+    display: none;
+    }
+
 }
 
 @media (max-width: 356px){

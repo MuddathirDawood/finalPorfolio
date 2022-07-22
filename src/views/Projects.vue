@@ -58,7 +58,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     min-height: 100vh;
     gap: 50px;
 }

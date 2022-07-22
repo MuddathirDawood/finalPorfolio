@@ -45,8 +45,16 @@ export default {
 }
 
 main{
+  min-width: 100%;
   min-height: 91vh;
   background: url("https://i.postimg.cc/HLzf5rW1/images.jpg") no-repeat center center/cover;
+}
+
+@media (max-width:769px){
+  main{
+      background-position-x: 0px;
+      background-position-y: 650px;
+    }
 }
 
 #footer{
