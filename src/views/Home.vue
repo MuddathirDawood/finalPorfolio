@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div>
+    <div id="box">
       <transition name="fade" appear>
       <p style="text-align: start;">I am</p>
       </transition>
@@ -22,6 +22,7 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 .container{
     /* background: url('../assets/images.jpg')no-repeat center center/cover; */
@@ -35,11 +36,15 @@ export default {
 
 h1{
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 200;
+  font-family: 'Audiowide', cursive;
+  -webkit-text-stroke: 1.2px #f95407;
 }
 
 p{
   margin-bottom: 0;
+  font-family: 'Audiowide', cursive;
+
 }
 
 .fade-enter-from{
@@ -56,5 +61,20 @@ p{
     transition: all 2.5s ease;
 }
 
+#box{
+  animation: scale 3s ease-in-out infinite;
+}
+
+@keyframes scale{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.05);
+	}
+	100%{
+		transform:  scale(1);
+	}
+}
 
 </style>

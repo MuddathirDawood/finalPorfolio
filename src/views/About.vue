@@ -8,9 +8,8 @@
             <h1>About Me</h1>
             <div class="container-bio">
               <h2 class="h2work">Bio</h2>
-              I am an optimistic person who will help my peers to the best of my ability. I'm patient and hard-working to the point where I can fully divert all my attention to my work.
-              Ever since I started doing coding in 2019, I grew a passion for coding. Then a relative of mine introduced me to Full Stack Developing, which motivated me. I then made it my goal to become a Full Stack Developer. <br>
-              A few hobbies of mine include:
+                  I am an optimistic person who will do my best to assist my peers. I'm patient and hardworking to the point where I can completely focus on my work. Since I began coding in 2019, I've developed a strong interest in the subject. Then a relative introduced me to Full Stack Development, which inspired me. I then set a goal of becoming a Full Stack Developer. <br>
+                  Some of my interests include:
               <ul>
                 <li>Video Games</li>
                 <li>Reading</li>
@@ -76,7 +75,7 @@
                   </div>               
                 </div>
               </div>
-              <div class="row pt-2">
+              <div class="row py-2">
                 <div class="col-12"><p class="progresstext">
                   JavaScript
                   <span id="nbr7">%</span></p>
@@ -85,6 +84,24 @@
                   </div>               
                 </div>
               </div>
+              <div class="row py-2">
+                <div class="col-12"><p class="progresstext">
+                  Node.js
+                  <span id="nbr8">%</span></p>
+                  <div class="progress bg-secondary" style="height: 8px;">
+                      <div class="progress-bar" style="width:30%; height: 8px;"></div>
+                  </div>               
+                </div>
+              </div>
+              <div class="row pt-2">
+                <div class="col-12"><p class="progresstext">
+                  Express.js
+                  <span id="nbr9">%</span></p>
+                  <div class="progress bg-secondary" style="height: 8px;">
+                      <div class="progress-bar" style="width:15%; height: 8px;"></div>
+                  </div>               
+                </div>
+              </div>                              
                     </div>
                     <div class="col-6"> 
                         <h5>Soft Skills</h5>
@@ -148,6 +165,8 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 
 .container{
     min-height: 110vh;
@@ -248,6 +267,10 @@ h1{
   font-weight: 300;
 }
 
+h2{
+  font-family: 'Audiowide', cursive;
+}
+
 h5{
   color: white;
   text-shadow: 0 0 10px #ff5e14;
@@ -277,6 +300,7 @@ h5{
 h3{
   color: white;
   text-align: center;
+  font-family: 'Audiowide', cursive;
 }
 
 #skills{
@@ -351,6 +375,17 @@ h3{
   inherits: false;
 }
 
+@property --num8 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --num9 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
 
 #nbr {
   counter-reset: num1 var(--num1);
@@ -415,6 +450,24 @@ h3{
   content: counter(num7);
 }
 
+#nbr8 {
+  counter-reset: num8 var(--num8);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr8:before {
+  content: counter(num8);
+}
+
+#nbr9 {
+  counter-reset: num9 var(--num9);
+  animation: animate 1750ms forwards ease;
+}
+
+#nbr9:before {
+  content: counter(num9);
+}
+
 @keyframes animate {
   to {
     --num1: 75;
@@ -424,6 +477,8 @@ h3{
     --num5: 85;
     --num6: 20;
     --num7: 40;
+    --num8: 30;
+    --num9: 15;
   }
 }
 

@@ -68,7 +68,29 @@ export default createStore({
           live: 'https://muddathir-rgbtohex.netlify.app/'
         },
         image: 'https://i.postimg.cc/qRP7NFZh/Screenshot-25.jpg'
-      }      
+      },
+      {
+        id:7,
+        title:'Unlimited CMD',
+        tools:'Vue.js/Node.js/Express.js/MySQL',
+        description:'This project was a pair project where we were divided into a front-end and back-end members where I was the back-end for this project',
+        links:{
+          github: 'https://github.com/MuddathirDawood/UnlimitedCMD',
+          live: 'https://unlimited-cmd.netlify.app/'
+        },
+        image: 'https://i.postimg.cc/tC9zxPWM/unlimited-CMD.jpg'
+      },
+      {
+        id:8,
+        title:'Destruction',
+        tools:'Vue.js/Node.js/Express.js/MySQL',
+        description:'This is the capstone project for Life Choices Coding Academy where we had to do a full stack project by ourselves',
+        links:{
+          github: 'https://github.com/MuddathirDawood/DestructionGUI',
+          live: 'https://capstone-destruction.web.app/'
+        },
+        image: 'https://i.postimg.cc/KvfTTHD6/Destruction.jpg'
+      }            
     ],
     testimonials:[
       {

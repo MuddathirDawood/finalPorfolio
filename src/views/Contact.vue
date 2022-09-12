@@ -4,7 +4,7 @@
             <div class="row">
                <div class="col-xl-6 mx-auto text-center">
                   <div class="section-title mb-100">
-                     <p>get in touch</p>
+                     <p>GET IN TOUCH</p>
                      <h4>contact me</h4>
                   </div>
                </div>
@@ -14,16 +14,16 @@
                      <form action="https://formspree.io/f/xoqrgelw" method="post" target="_blank" class="contact-form">
                         <div class="row">
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Name" id="name" name="Name">
+                              <input type="text" placeholder="Name" id="name" name="Name" required>
                            </div>
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Email" id="email" name="Email">
+                              <input type="email" placeholder="Email" id="email" name="Email" required>
                            </div>
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Subject" id="subject" name="Subject">
+                              <input type="text" placeholder="Subject" id="subject" name="Subject" required>
                            </div>
                            <div class="col-xl-6">
-                              <input type="text" placeholder="Cellphone" id="number" name="Number">
+                              <input type="text" placeholder="Cellphone" id="number" name="Number" required>
                            </div>
                            <div class="col-xl-12">
                               <textarea placeholder="Message" cols="30" rows="10" id="message" name="Message"></textarea>
@@ -120,6 +120,16 @@ a {
 	bottom: 0;
 	left: 40%;
 	margin-left: -25px;
+	animation: leftright 3s ease-in-out infinite;
+}
+
+@keyframes leftright{
+	25%{
+		transform: translateX(-10px);
+	}
+	75%{
+		transform: translateX(10px);
+	}
 }
 
 .contact {
@@ -142,6 +152,19 @@ textarea {
 	padding-left: 70px;
 	margin-bottom: 50px;
 	margin-top: 10px;
+	animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(-4px);
+	}
+	100%{
+		transform:  translateY(0px);
+	}
 }
 
 .single-contact i.fa {

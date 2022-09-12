@@ -5,8 +5,12 @@
     <img :src="testimonial.profile_img" :alt="testimonial.name" class="profile" />
     <h2>{{testimonial.name}}<span>{{testimonial.relation}}</span></h2>
     <p>{{testimonial.message}}</p>
-    <a :href="testimonial.links.github" class="github" target="_blank">GitHub</a>
-    <a :href="testimonial.links.linkedin" class="linkedin" target="_blank">LinkedIn</a>
+    <button class="mx-3">
+      <a :href="testimonial.links.github" class="github" target="_blank">GitHub</a>
+    </button>
+    <button class="mx-3">
+      <a :href="testimonial.links.linkedin" class="linkedin" target="_blank">LinkedIn</a>
+    </button>
   </div>
   </div>
 </template>
@@ -69,24 +73,7 @@ export default {
   border-width: 55px 0 0 400px;
   border-color: transparent transparent transparent black;
 }
-.card div a {
-  padding: 5px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  font-size: 0.7em;
-  text-transform: uppercase;
-  margin: 10px 0;
-  display: inline-block;
-  opacity: 0.65;
-  width: 47%;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.card div a:hover {
-  opacity: 1;
-}
+
 .card .profile {
   border-radius: 50px;
   position: absolute;
@@ -98,30 +85,7 @@ export default {
   opacity: 1;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.card .github {
-  margin-right: 4%;
-  border-left-color: #ff5e14;
-  border-top-color: #ff5e14;
-  color: #ff5e14;
-  background-image: linear-gradient(90deg, #ff5e14, white);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
 
-.card .linkedin {
-  border-right-color: #ff5e14;
-  border-bottom-color: #ff5e14;
-  color: #ff5e14;
-  background-image: linear-gradient(90deg, white, #ff5e14);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
 
 .card h2 {
   margin: 0 0 5px;
@@ -142,5 +106,50 @@ export default {
   max-height: 140px;
   opacity: 0.8;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/* From uiverse.io by @nikk7007 */
+button {
+ height: 40px;
+ padding: 0 10px 0 10px;
+ border: 2px solid #ff5e14;
+ position: relative;
+ overflow: hidden;
+ background-color: transparent;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 14px;
+ transition: .3s;
+ z-index: 1;
+ font-family: inherit;
+ letter-spacing: 2px;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 300%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #ff5e14;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+ width: 105%;
+}
+
+button:hover a{
+ color: black;
+}
+
 
 </style>
