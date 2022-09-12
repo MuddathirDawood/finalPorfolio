@@ -48,7 +48,7 @@ export default {
                 y: 0,
                 duration: 1.5,
                 onComplete: done,
-                delay: el.dataset.index * 0.8
+                delay: el.dataset.index * 0.6
             })
         }
 

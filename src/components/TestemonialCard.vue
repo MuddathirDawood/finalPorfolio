@@ -112,7 +112,6 @@ a{
   color: white;
 }
 
-/* From uiverse.io by @nikk7007 */
 button {
  height: 40px;
  padding: 0 10px 0 10px;
@@ -151,5 +150,11 @@ button:hover a{
  color: black;
 }
 
+@media (max-width: 400px){
+  button{
+    margin-top: 10px;
+    margin-left: 25% !important;
+  }
+}
 
 </style>

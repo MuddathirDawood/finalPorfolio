@@ -6,23 +6,23 @@
 				<h3>Muddathir<span>Dawood</span></h3>
 
 				<p class="footer-links">
-					<router-link class="link-1" to="/">
+					<router-link class="link-1" @click="toTop" to="/">
 					  Home
 					</router-link>
 					
-					<router-link to="/about">
+					<router-link @click="toTop" to="/about">
 					  About
 					</router-link>
 										
-					<router-link to="/projects">
+					<router-link @click="toTop" to="/projects">
 					  Projects
 					</router-link>
 				
-					<router-link to="/testimonials">
+					<router-link @click="toTop" to="/testimonials">
 					  Testimonials
 					</router-link>
 										
-					<router-link to="/contact">
+					<router-link @click="toTop" to="/contact">
 					  Contact
 					</router-link>
 				</p>
@@ -34,7 +34,7 @@
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>Bolton Rd</span> Rondevlei, Mitchells Plain</p>
+					<p>Mitchells Plain, Cape Town</p>
 				</div>
 
 				<div>
@@ -72,7 +72,11 @@
 
 <script>
 export default {
-
+	methods:{
+		toTop(){
+			window.scrollTo(0,0)
+		}
+	}
 }
 </script>
 

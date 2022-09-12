@@ -36,7 +36,7 @@
                      <div class="single-contact">
                         <i class="fa fa-map-marker"></i>
                         <h5>Address</h5>
-                        <p>Bolton Rd, Mitchells Plain, Cape Town</p>
+                        <p>Mitchells Plain, Cape Town</p>
                      </div>
                      <div class="single-contact">
                         <i class="fa fa-phone"></i>
