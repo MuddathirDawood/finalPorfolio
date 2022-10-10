@@ -90,7 +90,18 @@ export default createStore({
           live: 'https://capstone-destruction.web.app/'
         },
         image: 'https://i.postimg.cc/KvfTTHD6/Destruction.jpg'
-      }            
+      },
+      {
+        id:9,
+        title:'Quasaragram',
+        tools:'Vue.js/Quasar/Firebase Databasing',
+        description:'This is a simple instagram clone made using the vue.js framework Quasar',
+        links:{
+          github: 'https://github.com/MuddathirDawood/quasaragram',
+          live: 'https://quasaragram.web.app/#/'
+        },
+        image: 'https://i.postimg.cc/tgbdF2Mp/Project-9.jpg'
+      }                  
     ],
     testimonials:[
       {
